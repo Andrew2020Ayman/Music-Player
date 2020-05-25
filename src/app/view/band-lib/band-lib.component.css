@@ -79,7 +79,7 @@
     top: 22%;
     left: 7%;
     top: -37%;
-    background-image: url("assets/green-dust-and-scratches.png");
+    background-image: url('assets/green-dust-and-scratches.png');
 }
 
 
@@ -182,7 +182,7 @@
     right: -10%;
    
     background-color: black;
-    background-image: url("assets/green-dust-and-scratches.png");
+    background-image: url('assets/green-dust-and-scratches.png');
 }
 
 .AlbumTxt {
@@ -317,7 +317,7 @@ opacity: 0.5;
     left: 51%;
     opacity: 0.7;
     background-color: #020129;
-    background-image: url("assets/green-dust-and-scratches.png");
+    background-image: url('assets/green-dust-and-scratches.png');
  }
 
 .CDImg{
@@ -392,7 +392,7 @@ audio{
 }
 .PlayedTrack{
     background-color: black;
-    background-image: url("assets/green-dust-and-scratches.png") !important;
+    background-image: url('assets/green-dust-and-scratches.png') !important;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -518,7 +518,7 @@ audio{
     width: 100%;
     height: 100%;
     background-color: rgba(24, 38, 78, 0.1);
-    background-image: url("assets/green-dust-and-scratches.png");
+    background-image: url('assets/green-dust-and-scratches.png');
   position: fixed;
   
   top: 0;
