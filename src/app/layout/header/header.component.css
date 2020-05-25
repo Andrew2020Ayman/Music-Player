@@ -1,0 +1,86 @@
+.logo{
+    position: fixed;
+    z-index: 4;
+    /* width: 8%; */
+    left: 5%;
+    top: 5%;
+}
+.imgLogo{
+    width: 67%;
+    
+    cursor: pointer;
+    transition: 0.5s;
+}
+.imgLogo:hover{
+    width: 95%;
+}
+.SlideMenu{
+    position: fixed;
+    border-radius: 50%;
+    z-index: 4;
+     border: 0;
+    background-color: white;
+    right: -111px;
+    width: 19%;
+    height: 36%;
+    top: -101px;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.SlideMenu:hover{
+    width: 41%;
+    height: 88%;
+    top: -165px;
+}
+.imgMenu{
+   position: fixed;
+    top: 5%;
+    right: 3%;
+}
+
+.menuList{
+    position: fixed;
+    top: 6%;
+    right: 9%;
+    line-height: 4;
+    list-style: none;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(220%);
+}
+
+.SlideMenu:hover .menuList{
+    opacity: 1;
+    transform: translateX(10%);
+}
+.menuList li a{
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.horLine{
+    border: 1.2px solid;
+    background-color: black;
+    position: fixed;
+    top: 7%;
+    right: 76%;
+    width: 8%;
+    transition: 0.3s ease-out;
+}
+.menuList li:hover  .horLine{
+    width: 132%;
+}
+
+.horLineI{
+    top: 32%;
+
+}
+.horLineII{
+    top: 57%;
+}
+.horLineIII{
+    top: 81%;
+}
+

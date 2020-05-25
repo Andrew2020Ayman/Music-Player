@@ -1,0 +1,281 @@
+
+#home{
+  opacity: 0;
+}
+  .HomePage{
+      z-index: 2;
+  }
+  .imgHome{
+    width: 100%;
+  /*   position: fixed; */
+   transition: 0.2s ease-in-out;
+  }
+  .overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(24, 38, 78, 0.2);
+      background-image: url('../../../assets/green-dust-and-scratches.png');
+    position: fixed;
+    
+    top: 0;
+
+  }
+  .txtCont{
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 33%;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  .BandName{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 68px;
+    margin-left: 10%;
+    top: -73%;
+    position: relative;
+  }
+  .playlist{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 62px;
+    position: absolute;
+    top: -145%;
+    left: 20%;
+  }
+  .top{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: -82%;
+    left: 19%;
+  }
+
+  .listenBtn{
+    background-color: #707070;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 14px 35px 14px 35px;
+    position: absolute;
+    top: -29%;
+    font-size: 20px;
+    left: 10px;
+    cursor: pointer;
+    left: 20%;
+    transition: 0.3s ease-out;
+  }
+  .listenBtn:hover{
+    background-color: white ;
+    color: #707070;
+  }
+
+  .TitleDes{
+    font-size: 16px;
+    position: absolute;
+    width: 64%;
+    left: 12%;
+    top: 2%;
+  }
+
+  .bcLineI{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+  }
+  .bcLineII{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+  }
+
+  .SocialLinks{
+    position: absolute;
+    bottom: 23%;
+    left: 41%;
+  }
+  .SocialLinks i{
+    color: white;
+    font-size: 21px;
+    
+  }
+::ng-deep .IconBtn{
+    font-size: 53px !important;
+  } 
+
+  
+
+  ::ng-deep  .owl-theme {
+    display: block;
+    height: 100%;
+    margin-left: 0 !important;
+  }
+  ::ng-deep  .owl-carousel .owl-stage-outer {
+    height: 100%;
+    margin-left: -1.1%;
+  }
+
+  ::ng-deep .owl-carousel{
+    width: 103%;
+  }
+  ::ng-deep .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
+::ng-deep .owl-carousel.owl-loaded {
+  display: block;
+  position: fixed;
+  height: 100%;
+}
+
+  ::ng-deep  .owl-next {
+    width: 4%;
+    height: 8%;
+    position: absolute;
+    bottom: -11%;
+        left: -9%;
+    padding: 8px 7px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border-radius: 50% !important;
+    margin-left: 47% !important;
+    margin-bottom: 14% !important;
+    outline: none !important;
+    transition: all 0.3s ease 0s;
+  }
+
+ 
+  ::ng-deep  .owl-next img {
+    padding: 10px 9px !important;
+  }
+  ::ng-deep  .owl-prev {
+    width: 4%;
+    height: 8%;
+    position: absolute;
+    bottom: -11%;
+    left: 14%;
+    padding: 8px 7px !important;
+    background-color: rgba(255,255,255,0.2) !important;
+    border-radius: 50% !important;
+    margin-left: 0% !important;
+    margin-bottom: 14% !important;
+    outline: none !important;
+    transition: all 0.3s ease 0s;
+  }
+
+  .active{
+    color: white !important;
+    font-size: 83px !important;
+    margin-top: -8%;
+  }
+
+  .numbersCont{
+    width: 100%;
+    margin-top: 14%;
+    margin-left: 15%;
+    position: absolute;
+  }
+  .numbersCont p{
+    margin-left: 1%;
+    font-size: 41px;
+    font-weight: 100;
+    color: rgba(139, 136, 136, 0.753);
+  }
+
+  .CloseTrans{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background: white;
+    border: none;
+    z-index: 11;
+    bottom: 2%;
+    right: 49%;
+    transition: 0.3s ease-out;
+
+    opacity: 0;
+  }
+
+
+
+  #splash{
+    animation-duration: 4s;
+    
+    transition: 5s;
+    opacity: 0;
+    
+    z-index: 11;
+}
+
+.LoadPage{
+    background-color: #18264E;
+    background-color: transparent;
+    position: absolute;
+    width: 100.9%;
+    margin-left: -1%;
+    margin-top: -1%;
+    height: 102.1%;
+    z-index: 5;
+}
+.LoadPage p{
+    color: #18264E;
+    font-size: 30px;
+    margin-left: -6%;
+}
+
+.splash_screen{
+       margin-top: 18%;
+       margin-left: 26%;
+    width: 21%;
+}
+@keyframes loader-animation {
+    0% {
+      width: 0%;
+    }
+    49% {
+      width: 100%;
+      left: 0%
+    }
+    50% {
+      left: 100%;
+      width: 0;
+    }
+    100% {
+      left: 100%;
+      width: 0%
+    }
+  }
+  .loader {
+    height: 3px;
+    width: 100%;
+    margin-left: -32%;
+    background: gray;
+  }
+  .loader .bar {
+   
+    height: 3px;
+    background-color: white;
+    animation-name: loader-animation;
+    animation-duration: 3s;
+
+    -webkit-animation-delay:2s ;
+    animation-delay: 2s;
+    -moz-animation-delay:2s ;
+    -o-animation-delay:2s ;
+
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: -25%;
+    bottom: -27%;
+    min-width: 84%;
+    min-height: 1%;
+    z-index: 10;
+    opacity: 1;
+    transition: .5s;
+  }
+
+  
+  
