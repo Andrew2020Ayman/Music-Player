@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build   --base-href  https://Andrew2020Ayman.github.io/Music-Player/ && angular-cli-ghpages --branch  gh-pages"
+    "deploy": "ng build --prod  --base-href  https://Andrew2020Ayman.github.io/Music-Player/ && angular-cli-ghpages --branch  gh-pages"
   },
   "private": true,
   "dependencies": {

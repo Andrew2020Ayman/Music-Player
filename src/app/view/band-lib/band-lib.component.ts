@@ -19,14 +19,14 @@ export class BandLibComponent implements OnInit {
   scroll=40;
  scrollTopBool = 0;
  Images = [
-  "../../../assets/one.jpg" ,
-  "../../../assets/two.jpg" ,
-  "../../../assets/three.jpg" ,
-  "../../../assets/four.jpg" ,
-  "../../../assets/five.jpg" ,
-  "../../../assets/six.jpg" ,
-  "../../../assets/seven.jpg" ,
-  "../../../assets/eight.jpg" 
+  "assets/one.jpg" ,
+  "assets/two.jpg" ,
+  "assets/three.jpg" ,
+  "assets/four.jpg" ,
+  "assets/five.jpg" ,
+  "assets/six.jpg" ,
+  "assets/seven.jpg" ,
+  "assets/eight.jpg" 
 ];
 
 public urL: string = "";
@@ -37,42 +37,42 @@ andre = [
   {
       title: 'ASMAR',
       des:  'Andre X Jad',
-      link: '../../../assets/andre/ASMAR - Andre X Jad.mp3'
+      link: 'assets/andre/ASMAR - Andre X Jad.mp3'
   },
   {
     title: 'Bella Ciao ',
     des: 'La Casa De Papel',
-    link: '../../../assets/andre/Bella Ciao - La Casa De Papel.mp3'
+    link: 'assets/andre/Bella Ciao - La Casa De Papel.mp3'
   },
   {
     title: 'Btaaref Shuur',
     des: 'Adham Nabulsi',
-    link: '../../../assets/andre/Btaaref Shuur - Adham Nabulsi.mp3'
+    link: 'assets/andre/Btaaref Shuur - Adham Nabulsi.mp3'
   },
   {
     title: 'DANCE MONKEY ',
     des: 'Tones and I',
-    link: '../../../assets/andre/DANCE MONKEY - Tones and I.mp3'
+    link: 'assets/andre/DANCE MONKEY - Tones and I.mp3'
   },
   {
     title: 'DESPACITO',
     des: 'Luis Fonsi ft. Daddy Yankee',
-    link: '../../../assets/andre/DESPACITO - Luis Fonsi ft. Daddy Yankee.mp3'
+    link: 'assets/andre/DESPACITO - Luis Fonsi ft. Daddy Yankee.mp3'
   },
   {
     title: 'Karman Line',
     des: 'Andre X Jad',
-    link: '../../../assets/andre/Karman Line - Andre X Jad.mp3'
+    link: 'assets/andre/Karman Line - Andre X Jad.mp3'
   },
   {
     title: 'Kel el Qasayed',
     des: 'Marwan Khoury',
-    link: '../../../assets/andre/Kel el Qasayed - Marwan Khoury.mp3'
+    link: 'assets/andre/Kel el Qasayed - Marwan Khoury.mp3'
   },
   {
     title: 'Mohim Jiddan',
     des: 'Hussain Al Jassmi',
-    link: '../../../assets/andre/Mohim Jiddan - Hussain Al Jassmi.mp3'
+    link: 'assets/andre/Mohim Jiddan - Hussain Al Jassmi.mp3'
   }
 ];
 
@@ -80,42 +80,42 @@ Eddie  = [
   {
       title: 'Believer',
       des:'Imagine Dragons',
-      link: '../../../assets/Eddie van der Meer/Believer - Imagine Dragons.mp3'
+      link: 'assets/Eddie van der Meer/Believer - Imagine Dragons.mp3'
   },
   {
     title: 'bad guy',
     des:'Billie Eilish',
-    link: '../../../assets/Eddie van der Meer/Billie Eilish - bad guy.mp3'
+    link: 'assets/Eddie van der Meer/Billie Eilish - bad guy.mp3'
   },
   {
     title: 'City of Stars',
     des:'Ryan Gosling & Emma Stone',
-    link: '../../../assets/Eddie van der Meer/City of Stars  - Ryan Gosling & Emma Stone.mp3'
+    link: 'assets/Eddie van der Meer/City of Stars  - Ryan Gosling & Emma Stone.mp3'
   },
   {
     title: 'My Heart Will Go On',
     des:'',
-    link: '../../../assets/Eddie van der Meer/My Heart Will Go On.mp3'
+    link: 'assets/Eddie van der Meer/My Heart Will Go On.mp3'
   },
   {
     title: 'Perfect',
     des:'Ed Sheeran',
-    link: '../../../assets/Eddie van der Meer/Perfect - Ed Sheeran.mp3'
+    link: 'assets/Eddie van der Meer/Perfect - Ed Sheeran.mp3'
   },
   {
     title: 'Shape of You',
      des:'Ed Sheeran',
-    link: '../../../assets/Eddie van der Meer/Shape of You - Ed Sheeran.mp3'
+    link: 'assets/Eddie van der Meer/Shape of You - Ed Sheeran.mp3'
   },
   {
     title: 'Unravel',
     des:'Tokyo Ghoul OP',
-    link: '../../../assets/Eddie van der Meer/Unravel - Tokyo Ghoul OP.mp3'
+    link: 'assets/Eddie van der Meer/Unravel - Tokyo Ghoul OP.mp3'
   },
   {
     title: 'Wolves',
     des:'Selena Gomez & Marshmello',
-    link: '../../../assets/Eddie van der Meer/Wolves - Selena Gomez & Marshmello.mp3'
+    link: 'assets/Eddie van der Meer/Wolves - Selena Gomez & Marshmello.mp3'
   }
 ];
 
@@ -123,42 +123,42 @@ Graziatto  = [
           {
           title: 'A thousand years',
           des:'Christina Perri',
-          link: '../../../assets/Graziatto/A thousand years - Christina Perri (sax cover) Graziatto.mp3'
+          link: 'assets/Graziatto/A thousand years - Christina Perri (sax cover) Graziatto.mp3'
           },
           {
           title: 'Attention',
           des:'Charlie Puth',
-          link: '../../../assets/Graziatto/Attention - Charlie Puth (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/Attention - Charlie Puth (sax cover Graziatto).mp3'
           },
           {
           title: 'Childish Gambino',
           des:'Redbone',
-          link: '../../../assets/Graziatto/Childish Gambino - Redbone (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/Childish Gambino - Redbone (sax cover Graziatto).mp3'
           },
           {
           title: 'Aangerous woman',
           des:'Ariana Grande',
-          link: '../../../assets/Graziatto/Dangerous woman - Ariana Grande (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/Dangerous woman - Ariana Grande (sax cover Graziatto).mp3'
           },
           {
           title: 'Faded',
           des:'Alan Walker',
-          link: '../../../assets/Graziatto/Faded - Alan Walker (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/Faded - Alan Walker (sax cover Graziatto).mp3'
           },
           {
           title: 'i dont wanna live forever',
           des:'Zayn Taylor Swift',
-          link: '../../../assets/Graziatto/i dont wanna live forever - Zayn Taylor Swift (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/i dont wanna live forever - Zayn Taylor Swift (sax cover Graziatto).mp3'
           },
           {
           title: 'Love on the brain',
           des:'Rihanna',
-          link: '../../../assets/Graziatto/Love on the brain - Rihanna (sax cover Graziatto).mp3'
+          link: 'assets/Graziatto/Love on the brain - Rihanna (sax cover Graziatto).mp3'
           },
           {
           title: 'Rockabye',
           des:'',
-          link: '../../../assets/Graziatto/Rockabye (Sax cover) Graziatto.mp3'
+          link: 'assets/Graziatto/Rockabye (Sax cover) Graziatto.mp3'
           }
 ];
 private audio ;
