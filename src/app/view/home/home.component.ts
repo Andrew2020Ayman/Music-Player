@@ -11,26 +11,26 @@ export class HomeComponent implements OnInit {
   slides=['01', '02' , '03' ];
   
   imgsss =[
-    "../../../assets/headphones_table.jpg",
-    "../../../assets/guitar_close.jpg",
-    "../../../assets/microphone_instrument.jpg",
+    '/assets/assets/headphones_table.jpg',
+    '/assets/assets/guitar_close.jpg',
+    '/assets/assets/microphone_instrument.jpg',
   ];
   
   imgs=[
     {
-      imgPath:"../../../assets/guitar_guitarist_musical_instrument_126078_3840x2160.jpg",
+      imgPath:'/assets/assets/guitar_guitarist_musical_instrument_126078_3840x2160.jpg',
       Title:"Eddie van der Meer",
       des : "I'm a fingerstyle guitarist from the Netherlands."
 
     }, 
     {
-      imgPath :"../../../assets/backiee-10054.jpg",
+      imgPath :"/assets/assets/backiee-10054.jpg",
       Title :"Andre Soueid",
       des : "I am a violinist from Lebanon and I love doing cover songs and music videos."
 
     },
     {
-      imgPath :"../../../assets/rbbUehl-saxophone-wallpaper.png",
+      imgPath :"/assets/assets/rbbUehl-saxophone-wallpaper.png",
       Title :"Graziatto",
       des :"Mexican saxophonist Available Worldwide"
 
