@@ -24,13 +24,13 @@ export class HomeComponent implements OnInit {
 
     }, 
     {
-      imgPath :"/assets/backiee-10054.jpg",
+      imgPath :"assets/backiee-10054.jpg",
       Title :"Andre Soueid",
       des : "I am a violinist from Lebanon and I love doing cover songs and music videos."
 
     },
     {
-      imgPath :"/assets/rbbUehl-saxophone-wallpaper.png",
+      imgPath :"assets/rbbUehl-saxophone-wallpaper.png",
       Title :"Graziatto",
       des :"Mexican saxophonist Available Worldwide"
 
