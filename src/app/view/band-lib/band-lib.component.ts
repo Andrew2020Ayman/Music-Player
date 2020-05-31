@@ -161,27 +161,75 @@ Graziatto  = [
           link: 'assets/Graziatto/Rockabye (Sax cover) Graziatto.mp3'
           }
 ];
+
+TopTracks = [
+  {
+    title: 'DANCE MONKEY ',
+    des: 'Tones and I',
+    link: 'assets/andre/DANCE MONKEY - Tones and I.mp3'
+  },
+  {
+    title: 'Believer',
+    des:'Imagine Dragons',
+    link: 'assets/Eddie van der Meer/Believer - Imagine Dragons.mp3'
+  },
+  {
+    title: 'DESPACITO',
+    des: 'Luis Fonsi ft. Daddy Yankee',
+    link: 'assets/andre/DESPACITO - Luis Fonsi ft. Daddy Yankee.mp3'
+  },
+  {
+    title: 'Mohim Jiddan',
+    des: 'Hussain Al Jassmi',
+    link: 'assets/andre/Mohim Jiddan - Hussain Al Jassmi.mp3'
+  },
+  {
+      title: 'Believer',
+      des:'Imagine Dragons',
+      link: 'assets/Eddie van der Meer/Believer - Imagine Dragons.mp3'
+  },
+  {
+    title: 'Perfect',
+    des:'Ed Sheeran',
+    link: 'assets/Eddie van der Meer/Perfect - Ed Sheeran.mp3'
+  },
+  {
+    title: 'Shape of You',
+     des:'Ed Sheeran',
+    link: 'assets/Eddie van der Meer/Shape of You - Ed Sheeran.mp3'
+  },
+  {
+    title: 'Faded',
+    des:'Alan Walker',
+    link: 'assets/Graziatto/Faded - Alan Walker (sax cover Graziatto).mp3'
+    },
+
+]
 private audio ;
 played=true; 
 
 constructor()
    { 
     this.urL = window.location.href;
-  let urlLen = this.urL.length;
-  let MusicID = this.urL[urlLen-1];
+    let urlLen = this.urL.length;
+    let MusicID = this.urL[urlLen-1];
  
   
-  if(MusicID === '0'){
+   if(MusicID === '0'){
     this.msaapPlaylist = this.Eddie;
-    this.musicArtist = "Eddie van der Meer";
-  }
+    this.musicArtist = "Eddie";
+   }
   else if(MusicID === '1'){
     this.msaapPlaylist = this.andre;
-    this.musicArtist = "Andre Soueid";
+    this.musicArtist = "Andre";
   }
   else  if(MusicID === '2'){
     this.msaapPlaylist = this.Graziatto;
     this.musicArtist = "Graziatto";
+  }
+  else  if(MusicID === '3'){
+    this.msaapPlaylist = this.TopTracks;
+    this.musicArtist = "Top Tracks";
   }
     
   }
@@ -203,22 +251,22 @@ constructor()
 //-------------------------------------------------------------------
 
   
-    $('#button2').click(function(){    
+   /*  $('#button2').click(function(){    
       this.audio = this.document.getElementById("myAudio");
       this.audio.pause(); 
-    }); 
+    }); */ 
 
    
-    setTimeout(() => {
+     setTimeout(() => {
       document.getElementById("OpenTrans").style.opacity="1";
     document.getElementById("OpenTrans").style.width="5px";
     document.getElementById("OpenTrans").style.height="5px";
-    document.getElementById("OpenTrans").style.bottom="48.8%";
-    document.getElementById("OpenTrans").style.right="9.2%"; 
+    document.getElementById("OpenTrans").style.top="20.7%";
+    document.getElementById("OpenTrans").style.right="17%"; 
     setTimeout(() => {
       document.getElementById("OpenTrans").style.display="none"; 
     }, 900);
-    }, 1);
+    }, 1); 
     
   }
  
@@ -246,7 +294,7 @@ constructor()
     $("#audioPlayer")[0].src = this.msaapPlaylist[this.currentTrackID-1].link;
     $("#audioPlayer")[0].play();
     console.log("Tracks Open");
-    $('.PlayedTrack').css('background-color','black');
+    $('.PlayedTrack').css('background-color','#0e0e0e');
     $('.PlayedTrack').css('z-index','16');
    
     
@@ -254,6 +302,7 @@ constructor()
       document.getElementById("PlayedImg").style.setProperty("height","100%","important");
       document.getElementById("PlayedImg").style.top = "0";
       document.getElementById("PlayedImg").style.left = "0";
+      document.getElementById("PlayedImg").style.borderRadius = "0";
   
     setTimeout(() => {
        $('.CurrentTrack').css('opacity','1');
@@ -271,7 +320,7 @@ constructor()
     document.getElementById("PlayedImg").style.setProperty("height","44.5%","important");
     document.getElementById("PlayedImg").style.top = "32.8%";
     document.getElementById("PlayedImg").style.left = "13.8%";
-    
+    document.getElementById("PlayedImg").style.borderRadius = "24px";
    
      $('.PlayedTrack').css('background','transparent');
 
@@ -287,12 +336,16 @@ constructor()
      this.played = false;
   }
 
-  SlDown(){
-    if(this.currentTrackID !== 8)
+  /* SlDown(){
+   
+    
+    if(this.currentTrackID < 8)
     {
-      console.log(document.getElementById("BandTracksID").scrollTop);
       
-       this.currentTrackID++;
+      this.currentTrackID++;
+      this.currentTrackString = this.currentTrackID.toString();
+      console.log(this.currentTrackID);
+      console.log(this.currentTrackString);
       if(this.currentTrackID === 1){
         $('.PlayCont').css('top','46%');
       }
@@ -307,21 +360,28 @@ constructor()
           document.getElementById("BandTracksID").scrollTop += 65;
       } 
      
-      this.currentTrackString = this.currentTrackID.toString();
+    
      let degreeRot =  45;
      this.degree += degreeRot; 
-     console.log(`degree :  ${ this.degree} `);
+     
     
      document.getElementById("smallcircle").style.transform=` rotate(${this.degree}deg) `; 
+     
     }
    
   }
 
   SlUp(){
-    if(this.currentTrackID > 1)
+    
+    if(this.currentTrackID > 0)
     {
-      console.log(document.getElementById("BandTracksID").scrollTop);
-       this.currentTrackID--;
+      if(this.currentTrackID !==1){
+        this.currentTrackID--;
+        this.currentTrackString = this.currentTrackID.toString();
+      }
+      
+      console.log(this.currentTrackID);
+      console.log(this.currentTrackString);
       if(this.currentTrackID === 1){
         $('.PlayCont').css('top','46%');
       }
@@ -336,15 +396,15 @@ constructor()
       } 
 
       
-      this.currentTrackString = this.currentTrackID.toString();
+      
      let degreeRot =  -45;
      this.degree += degreeRot; 
-     console.log(`degree :  ${ this.degree} `);
     
      document.getElementById("smallcircle").style.transform=` rotate(${this.degree}deg) `; 
+     
     }
    
-  }
+  } */
   
 
 PlayClick(){

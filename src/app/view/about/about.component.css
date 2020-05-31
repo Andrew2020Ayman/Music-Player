@@ -1,0 +1,67 @@
+.BackCont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/AboutBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("/assets/green-dust-and-scratches.png");
+
+}
+.AboutCont{
+    
+    background-image: url("/assets/green-dust-and-scratches.png");
+    position: fixed;
+    width: 32%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: #02003d;
+    background-color: transparent;
+    top: 29%;
+    left: 2%;
+}
+
+
+
+.AboutTxt{
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 24%;
+    padding-left: 9%;
+    transform: translateX(-11%);
+    transition: 0.8s ;
+    opacity: 0;
+}
+
+.Abouttitle{
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 85px;
+    position: absolute;
+    top: -12%;
+    padding-left: 50%;
+    transform: translateX(16%);
+    transition: 0.8s ;
+    opacity: 0;
+}
+.SocialLinks{
+    position: absolute;
+    bottom: 6%;
+    left: 7%;
+  }
+  .SocialLinks i{
+    color: white;
+    font-size: 21px;
+    
+  }

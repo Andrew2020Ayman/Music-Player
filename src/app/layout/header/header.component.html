@@ -4,7 +4,7 @@
     </div>
 
     <div class="SlideMenu">
-         <img src="assets/Group 7.png" class="imgMenu">
+         <img src="assets/Group 7.png" class="imgMenu" (click)="ControlSlide()">
         
          <ul class="menuList">
             <li> 
@@ -13,13 +13,22 @@
                 > 
                      Home</a></li>
             <li> 
+               
                 <hr class=" horLine horLineI">
                   <a 
-                  href=""
-                  [routerLink]="['/Band/4']"
+                  href="/Band/3"
+                  
                   > Top Tracks</a></li>
-            <li> <hr class="horLine horLineII"> <a href="">Contact</a></li>
-            <li> <hr class=" horLine horLineIII"> <a href="">About</a></li>
+            <li> <hr class="horLine horLineII">
+                 <a 
+                 href=""
+                  [routerLink]="['/Contact']"
+                 >Contact</a></li>
+            <li> <hr class=" horLine horLineIII">
+                 <a 
+                 href=""
+                 [routerLink]="['/About']"
+                 >About</a></li>
           </ul>
         
     </div>

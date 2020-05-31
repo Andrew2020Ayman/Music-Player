@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
-
+declare var $ :any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -65,37 +65,39 @@ export class HomeComponent implements OnInit {
     ]
   };
   
-  firstintro = true; 
+  /* firstintro = false;  */
   constructor( public router:Router) { 
-   
+    
   }
 
 
   ngOnInit() {
   
     /* ----------- */
-
-
-    /*  */
-    setTimeout(() => {
-      document.getElementById("splash").style.opacity="1";
-      document.getElementById("home").style.opacity="1";
-    }, 2000);
+  
   
    
-    
+    /* 
+     setTimeout(() => {
+      document.getElementById("splash").style.opacity="1";
+      document.getElementById("home").style.opacity="1";
+      
+    }, 2000);
+
     setTimeout(() => {
       document.getElementById("myVideo").style.opacity="0";
       document.getElementById("splash").style.opacity="0";
       document.getElementById("splash").style.display="none";
-    }, 3570);
+    }, 3570); 
   
-    setTimeout(() => {
+     setTimeout(() => {
       document.getElementById("myVideo").style.display="none";
       document.getElementById("myVideo").remove();
       document.getElementById("splash").remove();
       this.firstintro = false;
-    }, 4100);
+    }, 4100); 
+
+     */
 
     this.customOptions = {
       loop: true,
@@ -128,6 +130,7 @@ export class HomeComponent implements OnInit {
     
   }
 
+  
   GoToBand(BandId){
     setTimeout(() => {
       document.getElementById("closTrns").style.opacity="1";

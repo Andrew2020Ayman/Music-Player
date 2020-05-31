@@ -11,13 +11,17 @@ import { BandLibComponent } from './view/band-lib/band-lib.component';
 
 /* import { NgxAudioPlayerModule } from 'ngx-audio-player'; */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './view/about/about.component';
+import { ContactComponent } from './view/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    BandLibComponent
+    BandLibComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

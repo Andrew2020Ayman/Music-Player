@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url('/assets/green-dust-and-scratches.png');
+    background-image: url("/assets/green-dust-and-scratches.png");
 }
 
 .smallCircleCont{
@@ -15,12 +15,13 @@
     right: -26%;
     top: -14%;
     border-radius: 50%;
-    border: 2px solid #707070;
+    border: 6px solid white;
     transition: 0.5s;
     background-color: #18264E;
     background-color: #020129;
     opacity: 1;
-    background-image: url('/assets/green-dust-and-scratches.png');
+   /*  background-image: url("/assets/green-dust-and-scratches.png"); */
+    background-color: #0e0e0e;
 }
 
 .BigCicle{
@@ -49,9 +50,7 @@
 }
 .BigCicle .active{
     opacity: 1 !important;
-    box-shadow: -5px -5px 30px 5px deepskyblue, 5px 5px 30px 5px blue;
-    box-shadow: -5px -5px 30px 5px cyan, 5px 5px 30px 5px blue;
-    box-shadow: -5px -5px 59px 6px darkmagenta, 5px 5px 30px 5px darkturquoise;
+    box-shadow: -5px -5px 30px -12px white, 5px 5px 30px 15px #142850;
 }
 #smallcircle{
     -webkit-transition: all 1s ease-in;
@@ -77,7 +76,8 @@
     top: 22%;
     left: 7%;
     top: -37%;
-    background-image: url('/assets/green-dust-and-scratches.png');
+ /*    background-image: url("/assets/green-dust-and-scratches.png"); */
+    background-color: #0e0e0e;
 }
 
 
@@ -87,6 +87,7 @@
     width: 44% !important;
     height: 20% !important;
     cursor: pointer;
+    border-radius: 24px;
 }
 .BandImg {
     width: 34%;
@@ -180,7 +181,7 @@
     right: -10%;
    
     background-color: black;
-    background-image: url('/assets/green-dust-and-scratches.png');
+    background-image: url("/assets/green-dust-and-scratches.png");
 }
 
 .AlbumTxt {
@@ -190,6 +191,7 @@
 }
 .AlbumTxt p{
     color: white;
+    font-family: 'Audiowide', cursive;
 }
 
 .AlTxt{
@@ -201,9 +203,10 @@
     margin-top: -5%;
 }
 .BandName{
-    font-size: 70px;
+    font-family: 'Audiowide', cursive;
+    font-size: 66px;
     margin-top: 10%;
-    margin-left: -18%;
+    margin-left: -32%;
     color: white;
 }
 
@@ -212,8 +215,8 @@
     margin-top: 42%;
     line-height: 4;
     margin-left: 11%;
-    height: 24%;
-    overflow-y: hidden;
+    height: 30%;
+    overflow-y: scroll;
     width: 41%;
     z-index: 8;
 }
@@ -224,6 +227,7 @@
 }
 .TracksList li{
 opacity: 0.5;
+font-family: 'Audiowide', cursive;
 }
 
 .TracksList  .active{
@@ -315,7 +319,7 @@ opacity: 0.5;
     left: 51%;
     opacity: 0.7;
     background-color: #020129;
-    background-image: url('/assets/green-dust-and-scratches.png');
+    background-image: url("/assets/green-dust-and-scratches.png");
  }
 
 .CDImg{
@@ -331,10 +335,11 @@ audio{
 
 .TrackBand{
     text-align: center;
-    font-size: 37px;
-    top: 17%;
+    font-size: 48px;
+    top: 13%;
     color: white;
     position: relative;
+    font-family: 'Audiowide', cursive;
 }
 .TrackName{
     font-size: 28px;
@@ -342,7 +347,8 @@ audio{
     position: relative;
     color: white;
     text-align: center;
-    top: -10%;
+    top: -13%;
+    font-family: 'Audiowide', cursive;
 }
 
 .trackDes{
@@ -390,7 +396,7 @@ audio{
 }
 .PlayedTrack{
     background-color: black;
-    background-image: url('/assets/green-dust-and-scratches.png') !important;
+  /*   background-image: url("/assets/green-dust-and-scratches.png") !important; */
     height: 100%;
     width: 100%;
     position: fixed;
@@ -398,7 +404,7 @@ audio{
     
     opacity: 1;
     z-index: 0;
-    
+    background-color: #0e0e0e;
 }
 
 .ImgExp{
@@ -407,8 +413,9 @@ audio{
     position: fixed;
     top: 33%;
     left: 11%;
+    border-radius: 24px;
     transition: 0.8s;
-    box-shadow: -5px -5px 59px 6px darkmagenta, 5px 5px 30px 5px darkturquoise;
+   /*  box-shadow: -5px -5px 59px 6px darkmagenta, 5px 5px 30px 5px darkturquoise; */
 }
 .CloseBtn{
     width: 56px;
@@ -509,17 +516,17 @@ audio{
   }
   .bcLineII{
     position: absolute;
-    width: 65%;
+    width: 51%;
     top: 74%;
   }
   .overlay{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     background-color: rgba(24, 38, 78, 0.1);
-    background-image: url('/assets/green-dust-and-scratches.png');
+    background-image: url("/assets/green-dust-and-scratches.png");
   position: fixed;
   
-  top: 0;
+  top: 0; */
 
 }
 

@@ -1,6 +1,6 @@
 
 #home{
-  opacity: 0;
+  opacity: 1;
 }
   .HomePage{
       z-index: 2;
@@ -33,9 +33,10 @@
     margin-left: 10%;
     top: -73%;
     position: relative;
+      font-family: 'Audiowide', cursive;
   }
   .playlist{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Audiowide', cursive;
     font-size: 62px;
     position: absolute;
     top: -145%;
@@ -62,6 +63,7 @@
     cursor: pointer;
     left: 20%;
     transition: 0.3s ease-out;
+    font-family: 'Audiowide', cursive;
   }
   .listenBtn:hover{
     background-color: white ;
@@ -74,6 +76,7 @@
     width: 64%;
     left: 12%;
     top: 2%;
+    font-family: 'Audiowide', cursive;
   }
 
   .bcLineI{
@@ -177,6 +180,7 @@
     font-size: 41px;
     font-weight: 100;
     color: rgba(139, 136, 136, 0.753);
+    font-family: 'Audiowide', cursive;
   }
 
   .CloseTrans{

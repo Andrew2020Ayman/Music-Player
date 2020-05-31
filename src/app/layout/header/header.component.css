@@ -28,11 +28,12 @@
     transition: 0.4s ease-out;
 }
 
-.SlideMenu:hover{
+/* .SlideMenu:hover{
     width: 41%;
     height: 88%;
     top: -165px;
-}
+} */
+
 .imgMenu{
    position: fixed;
     top: 5%;
@@ -50,11 +51,13 @@
     transform: translateX(220%);
 }
 
-.SlideMenu:hover .menuList{
+/* .SlideMenu:hover .menuList{
     opacity: 1;
     transform: translateX(10%);
-}
+} */
+
 .menuList li a{
+    font-family: 'Audiowide', cursive;
     color: black;
     font-size: 22px;
     text-decoration: none;
@@ -65,12 +68,20 @@
     background-color: black;
     position: fixed;
     top: 7%;
-    right: 76%;
+    right: 79%;
     width: 8%;
     transition: 0.3s ease-out;
 }
 .menuList li:hover  .horLine{
-    width: 132%;
+    width: 113%;
+}
+
+.menuList li:hover  .horLineII{
+    width: 99%;
+}
+
+.menuList li:hover  .horLineIII{
+    width: 61%;
 }
 
 .horLineI{
