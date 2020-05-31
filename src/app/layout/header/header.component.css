@@ -21,8 +21,8 @@
      border: 0;
     background-color: white;
     right: -111px;
-    width: 19%;
-    height: 36%;
+    width: 17%;
+    height: 31%;
     top: -101px;
     cursor: pointer;
     transition: 0.4s ease-out;
@@ -37,7 +37,8 @@
 .imgMenu{
    position: fixed;
     top: 5%;
-    right: 3%;
+    right: 2%;
+    width: 3%;
 }
 
 .menuList{
@@ -94,4 +95,62 @@
 .horLineIII{
     top: 81%;
 }
+/*  */
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+   
+    .menuList li a {
+        font-size: 25px;
+    }
+    .horLine {
+        top: 8%;
+        right: 82%;
+    }
+    .horLineI {
+        top: 33%;
+    }
+    .horLineII {
+        top: 58%;
+    }
+    .horLineIII {
+        top: 83%;
+    }
+    .menuList li:hover .horLineIII {
+        width: 53%;
+    }
+    .imgLogo {
+        width: 100%;
+    }
+    .imgLogo:hover {
+        width: 120%;
+    }
 
+}
+
+
+@media only screen and (min-width: 1800px) {
+    .menuList li a {
+        font-size: 28px;
+    }
+    .horLine {
+        top: 8%;
+        right: 82%;
+    }
+    .horLineI {
+        top: 33%;
+    }
+    .horLineII {
+        top: 58%;
+    }
+    .horLineIII {
+        top: 83%;
+    }
+    .menuList li:hover .horLineIII {
+        width: 53%;
+    }
+    .imgLogo {
+        width: 100%;
+    }
+    .imgLogo:hover {
+        width: 120%;
+    }
+}

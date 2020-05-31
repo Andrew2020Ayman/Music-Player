@@ -313,8 +313,6 @@ constructor()
   
   CloseTrack(){
       $("#audioPlayer")[0].pause();
-    
-   
 
      document.getElementById("PlayedImg").style.setProperty("width","38.2%","important");
     document.getElementById("PlayedImg").style.setProperty("height","44.5%","important");

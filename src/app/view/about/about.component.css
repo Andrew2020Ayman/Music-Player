@@ -3,7 +3,7 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
     background-image: url("../../../assets/AboutBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,12 +14,12 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
 
 }
 .AboutCont{
     
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
     position: fixed;
     width: 32%;
     height: 65%;
@@ -64,4 +64,18 @@
     color: white;
     font-size: 21px;
     
+  }
+
+  @media only screen and (min-width: 1600px){
+    .Abouttitle {
+        font-size: 104px;
+    }
+    .AboutTxt {
+        font-size: 33px;
+        top: 19%;
+    }
+    .SocialLinks i {
+        color: white;
+        font-size: 33px;
+    }
   }

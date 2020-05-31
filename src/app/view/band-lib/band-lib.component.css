@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
 }
 
 .smallCircleCont{
@@ -20,7 +20,7 @@
     background-color: #18264E;
     background-color: #020129;
     opacity: 1;
-   /*  background-image: url("/assets/green-dust-and-scratches.png"); */
+   /*  background-image: url("../../../assets/green-dust-and-scratches.png"); */
     background-color: #0e0e0e;
 }
 
@@ -76,7 +76,7 @@
     top: 22%;
     left: 7%;
     top: -37%;
- /*    background-image: url("/assets/green-dust-and-scratches.png"); */
+ /*    background-image: url("../../../assets/green-dust-and-scratches.png"); */
     background-color: #0e0e0e;
 }
 
@@ -181,7 +181,7 @@
     right: -10%;
    
     background-color: black;
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
 }
 
 .AlbumTxt {
@@ -234,6 +234,7 @@ font-family: 'Audiowide', cursive;
     opacity: 1 !important;
 }
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
   }
@@ -319,7 +320,7 @@ font-family: 'Audiowide', cursive;
     left: 51%;
     opacity: 0.7;
     background-color: #020129;
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
  }
 
 .CDImg{
@@ -360,34 +361,7 @@ audio{
     top: -3%;
 }
 
-/* ------------------ */
-::ng-deep mat-card{
-    margin-top: 36%;
-    width: 45%;
-    margin-left: 53%;
-}
-::ng-deep .mat-expansion-panel-body {
-    padding: 0 24px 16px;
-    display: none !important;
-}
-::ng-deep .mat-expansion-panel{
-    display: none !important;
-}
 
-::ng-deep mat-advanced-audio-player{
-  /*   display: none; */
-}
-::ng-deep .mat-elevation-z1 {
-    height: 7% !important;
-    top: 15% !important;
-}
-
-::ng-deep .mat-card {
-    position: fixed !important;
-    bottom: 12% !important;
-    right: 2% !important;
-
-}
 
 .Band{
     transition: .4s;
@@ -523,7 +497,7 @@ audio{
     /* width: 100%;
     height: 100%;
     background-color: rgba(24, 38, 78, 0.1);
-    background-image: url("/assets/green-dust-and-scratches.png");
+    background-image: url("../../../assets/green-dust-and-scratches.png");
   position: fixed;
   
   top: 0; */
@@ -700,4 +674,111 @@ input[type="range"] {
     100% {
       background-position: 0 0;
     }
+  }
+
+  
+
+  @media only screen and (min-width: 1600px)  {
+    .smallCircleCont {
+      width: 1200px;
+      height: 1200px;
+    }
+    .AlbumCicle {
+      width: 1100px;
+      height: 1100px;
+      top: 4%;
+    }
+    .AlTxt {
+      font-size: 49px;
+    }
+    .TopSongTxt {
+      margin-left: -8%;
+      margin-top: -15%;
+      font-size: 22px;
+  }
+  .BandName {
+    font-family: 'Audiowide', cursive;
+    font-size: 81px;
+  }
+  .TracksList li {
+    font-size: 22px;
+  }
+  .BigStaticCircle {
+    position: fixed;
+    width: 1700px;
+    height: 1700px;
+  }
+  .BigCicle {
+    position: fixed;
+    width: 1600px;
+    height: 1600px;
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  .CloseBtn{
+    width: 66px;
+    height: 66px;
+  }
+  .CloseBtni{
+    font-size: 36px;
+  }
+  .CloseBtn:hover i{
+    font-size: 40px;
+  }
+  .trackContainer .block-container .block{
+    position: relative;
+    width: 600px;
+    height: 600px;
+  }
+  .TrackBand{
+    text-align: center;
+    font-size: 55px;
+  }
+  .TrackName{
+    font-size: 34px;
+  }
+  .trackDes{
+    font-size: 30px;
+  }
+  .ContPlay{
+    width: 190px;
+    height: 190px;
+  }
+  .volMin{
+    width: 80px;
+    height: 80px;
+    top: 71%;
+    right: 68%;
+}
+.volPl{
+  right: 17% !important;
+}
+#seekbar{
+  margin-top: 1%;
+  margin-left: 3%;
+  width: 103%;
+  position: fixed;
+}
+input[type="range"]{
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 7px;
+  vertical-align: middle;
+  border-radius: 20px;
+  background-color: #232323;
+  outline: none;
+}
+
+  }
+  @media only screen and (min-width: 1800px) {
+    .BigCicle {
+      left: 38.9% !important;
+    top: -46% !important;
+    }
+    .bimg {
+      width: 44% !important;
+      height: 25% !important;
+      cursor: pointer;
+  }
   }
