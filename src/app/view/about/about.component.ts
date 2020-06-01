@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 declare var $ :any;
 
@@ -9,7 +10,8 @@ declare var $ :any;
 })
 export class AboutComponent implements OnInit {
 
-  constructor() {
+  LinkedUrl = "https://www.linkedin.com/in/andrew-ayman-068735152/";
+  constructor( private router:Router) {
     setTimeout(() => {
       document.getElementById("Abouttitle").style.transform = "translateX(0%)";
       document.getElementById("Abouttitle").style.opacity = "1";
@@ -25,5 +27,8 @@ setTimeout(() => {
 
   ngOnInit(): void {
   }
-
+GoToLinked(){
+  window.location.href = "https://www.linkedin.com/in/andrew-ayman-068735152/";
+ /*  this.router.navigateByUrl('https://www.linkedin.com/in/andrew-ayman-068735152/') */
+}
 }

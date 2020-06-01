@@ -79,3 +79,21 @@
         font-size: 33px;
     }
   }
+
+  @media only screen and (max-width: 900px){
+    .Abouttitle {
+        top: 2%;
+    }    
+    .BackCont {
+        background-size: contain;
+    }
+    .AboutCont {
+        width: 93%;
+    }
+    .Abouttitle {
+        padding-left: 14%;
+    }
+
+
+
+}

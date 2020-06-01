@@ -9,7 +9,10 @@ export class ContactComponent implements OnInit {
 
   constructor() { 
     setTimeout(() => {
-      document.getElementById("AboutSek").style.transform = " skew(19deg, 0deg) translateX(0%)";
+      if(window.innerWidth > 900){
+        document.getElementById("AboutSek").style.transform = " skew(19deg, 0deg) translateX(0%)";
+      }
+      
       document.getElementById("AboutSek").style.opacity = "1";
     }, 800);
 

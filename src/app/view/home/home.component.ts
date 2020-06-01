@@ -7,7 +7,7 @@ declare var $ :any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  LinkedUrl = "https://www.linkedin.com/in/andrew-ayman-068735152/";
   slides=['01', '02' , '03' ];
   
   imgsss =[

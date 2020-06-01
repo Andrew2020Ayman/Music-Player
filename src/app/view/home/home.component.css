@@ -4,6 +4,7 @@
 }
   .HomePage{
       z-index: 2;
+      background-color: black;
   }
   .imgHome{
     width: 100%;
@@ -282,7 +283,7 @@
   }
 
   
-  /* and (max-width: 1800px) */
+
     @media only screen and (min-width: 1600px)  {
       .BandName {
         font-size: 95px;
@@ -311,6 +312,35 @@
     }
 
     }
-    @media only screen and (min-width: 1800px) {
+    @media only screen and (max-width: 900px){
 
+      .listenBtn {
+        margin-top: 59%;
+        left: 26%;
+      }
+      .numbersCont {
+        width: 100%;
+        margin-top: 84%;
+      }
+
+      .SocialLinks {
+        position: absolute;
+        bottom: -169%;
+        left: 15%;
     }
+
+    .BandName {
+      font-size: 29px;
+      top: 240%;
+    }
+    .TitleDes{
+      font-size: 16px;
+      width: 70%;
+      left: 12%;
+      top: 317%;
+    }
+
+    ::ng-deep .owl-theme .owl-nav {
+      display: none !important;
+    }
+    } 
