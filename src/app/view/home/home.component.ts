@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     dots: false,
     navSpeed: 700,
     mouseDrag:true,
-     margin:35,
+     margin:0,
      slideTransition:"fade",
     responsive: {
       0: {
@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit {
       loop: true,
       dots: false,
       navSpeed: 700,
-    margin:35,
+    margin:0,
     animateIn: 'fadeIn', // add this
   animateOut: 'fadeOut' ,// and this
       responsive: {

@@ -154,3 +154,35 @@
         width: 120%;
     }
 }
+
+@media only screen and (max-width: 900px){
+    .imgLogo{
+        display: none;
+    }
+    .imgMenu {
+        position: fixed;
+        top: 4%;
+        right: 3%;
+        width: 8%;
+    }
+    .SlideMenu {
+        right: -51px;
+        width: 32%;
+        height: 19%;
+        top: -49px;
+    }
+    .menuList{
+        position: fixed;
+        top: 4%;
+        right: 9%;
+    }
+    .menuList li a {
+        font-size: 17px;
+        margin-left: -35%;
+    }
+    .horLine{
+        right: 101%;
+    }
+
+
+}

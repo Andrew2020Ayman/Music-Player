@@ -81,9 +81,7 @@
   }
 
   @media only screen and (max-width: 900px){
-    .Abouttitle {
-        top: 2%;
-    }    
+      
     .BackCont {
         background-size: contain;
     }
@@ -91,9 +89,17 @@
         width: 93%;
     }
     .Abouttitle {
+        top: 2%;
         padding-left: 14%;
     }
-
-
-
+    .AboutTxt {
+        font-size: 19px;
+    }
+    .SocialLinks {
+        position: absolute;
+        bottom: 6%;
+        left: 11%;
+    }
+    
+    
 }

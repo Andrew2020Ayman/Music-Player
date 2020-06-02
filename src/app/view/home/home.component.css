@@ -312,7 +312,7 @@
     }
 
     }
-    @media only screen and (max-width: 900px){
+   /*  @media only screen and (max-width: 900px){
 
       .listenBtn {
         margin-top: 59%;
@@ -343,4 +343,41 @@
     ::ng-deep .owl-theme .owl-nav {
       display: none !important;
     }
-    } 
+    }  */
+
+
+    @media only screen and (max-width: 900px){
+      .playlist , .top{
+        display: none;
+      }
+      .txtCont{
+        top: 136%;
+      }
+      .BandName{
+        font-size: 30px;
+        width: 100%;
+        margin-left: 6%;
+      }
+      .numbersCont {
+        width: 100%;
+        margin-top: 32%;
+        margin-left: 14%;
+      }
+      .listenBtn{
+        top: 23px;
+        left: 23%;
+      }
+      ::ng-deep .owl-theme .owl-nav {
+        display: none !important;
+      }
+      .TitleDes{
+        width: 92%;
+        left: 9%;
+        top: 2%;
+      }
+      .SocialLinks {
+        position: absolute;
+        bottom: -184%;
+        left: 12%;
+    }
+    }

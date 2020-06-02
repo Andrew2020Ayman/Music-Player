@@ -92,11 +92,9 @@
     .ContactForm {
         height: 100%;
         background: transparent;
-        /* margin-top: 13%; */
-        /* margin-left: 5%; */
         opacity: 0;
         transition: 0.9s;
-        bottom: -39%;
+        bottom: -33%;
         position: fixed;
     }
     .AboutSek {
@@ -115,4 +113,10 @@
        position: absolute;
     }
 
+    .ContactHead {
+        font-size: 33px;
+        top: -16%;
+        left: -5%;
+        color: white;
+    }
 }

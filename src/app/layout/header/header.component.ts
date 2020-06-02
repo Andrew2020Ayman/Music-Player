@@ -36,7 +36,15 @@ export class HeaderComponent implements OnInit {
     console.log(windWidth);
     if(this.slideBool){
       console.log("Normal");
-      if(windWidth < 1600){
+        if(windWidth <= 900){
+        $('.SlideMenu').css("width","109%");
+        $('.SlideMenu').css("height","73%");
+        $('.SlideMenu').css("top","-165px");
+  
+        $('.menuList').css("opacity","1");
+        $('.menuList').css("transform","translateX(10%)");
+      }
+     else if(windWidth < 1600){
         $('.SlideMenu').css("width","41%");
         $('.SlideMenu').css("height","88%");
         $('.SlideMenu').css("top","-165px");
@@ -65,7 +73,17 @@ export class HeaderComponent implements OnInit {
     let windWidth = window.innerWidth;
     console.log(windWidth);
     
-    if( !this.slideBool && windWidth < 1600){
+    if( !this.slideBool && windWidth <= 900){
+     
+      $('.SlideMenu').css("width","32%");
+      $('.SlideMenu').css("height","19%");
+      $('.SlideMenu').css("top","-49px");
+      $('.SlideMenu').css("right","-51px");
+
+      $('.menuList').css("opacity","0");
+      $('.menuList').css("transform","translateX(220%)");
+    }
+   else if( !this.slideBool && windWidth < 1600){
       $('.SlideMenu').css("width","17%");
     $('.SlideMenu').css("height","31%");
     $('.SlideMenu').css("top","-101px");

@@ -272,18 +272,27 @@ constructor()
  
 
   GoToTrack(TrackID){
-    let rotNm = TrackID - this.currentTrackID;
+    let windWidth = window.innerWidth;
+    console.log(windWidth);
     
-    let degreeRot = rotNm * 45;
-    this.degree += degreeRot; 
-    console.log(`degree :  ${ this.degree} `);
-    if(degreeRot !== 0){
-       this.currentTrackID = TrackID ;
-       this.currentTrackString = this.currentTrackID.toString();
-    document.getElementById("smallcircle").style.transform=` rotate(${this.degree}deg) `; 
+    if(windWidth <= 900){
+      this.currentTrackID = TrackID ;
+      this.OPenImgTrack();
+    }else{
+      let rotNm = TrackID - this.currentTrackID;
+          let degreeRot = rotNm * 45;
+          this.degree += degreeRot; 
+          console.log(`degree :  ${ this.degree} `);
+          if(degreeRot !== 0){
+            this.currentTrackID = TrackID ;
+            this.currentTrackString = this.currentTrackID.toString();
+          document.getElementById("smallcircle").style.transform=` rotate(${this.degree}deg) `; 
+          }
+        
     }
+
+    
    
-     console.log(this.currentTrackID);
   }
 
 
@@ -293,13 +302,23 @@ constructor()
     this.played = true;
     $("#audioPlayer")[0].src = this.msaapPlaylist[this.currentTrackID-1].link;
     $("#audioPlayer")[0].play();
-    console.log("Tracks Open");
     $('.PlayedTrack').css('background-color','#0e0e0e');
     $('.PlayedTrack').css('z-index','16');
    
     
+    let windWidth = window.innerWidth;
+    console.log(windWidth);
+    
+    if(windWidth <= 900){
+      document.getElementById("PlayedImg").style.setProperty("opacity","1","important");
+      document.getElementById("PlayedImg").style.setProperty("width","100%","important");
+      document.getElementById("PlayedImg").style.setProperty("height","41%","important");
+    }else{
       document.getElementById("PlayedImg").style.setProperty("width","51%","important");
       document.getElementById("PlayedImg").style.setProperty("height","100%","important");
+    }
+
+      
       document.getElementById("PlayedImg").style.top = "0";
       document.getElementById("PlayedImg").style.left = "0";
       document.getElementById("PlayedImg").style.borderRadius = "0";
@@ -314,11 +333,21 @@ constructor()
   CloseTrack(){
       $("#audioPlayer")[0].pause();
 
-     document.getElementById("PlayedImg").style.setProperty("width","38.2%","important");
-    document.getElementById("PlayedImg").style.setProperty("height","44.5%","important");
-    document.getElementById("PlayedImg").style.top = "32.8%";
-    document.getElementById("PlayedImg").style.left = "13.8%";
-    document.getElementById("PlayedImg").style.borderRadius = "24px";
+      let windWidth = window.innerWidth;
+    console.log(windWidth);
+    
+    if(windWidth <= 900){
+      document.getElementById("PlayedImg").style.setProperty("opacity","0","important");
+    }
+    
+        document.getElementById("PlayedImg").style.setProperty("width","38.2%","important");
+        document.getElementById("PlayedImg").style.setProperty("height","44.5%","important");
+        document.getElementById("PlayedImg").style.top = "32.8%";
+        document.getElementById("PlayedImg").style.left = "13.8%";
+        document.getElementById("PlayedImg").style.borderRadius = "24px";
+    
+   
+   
    
      $('.PlayedTrack').css('background','transparent');
 
