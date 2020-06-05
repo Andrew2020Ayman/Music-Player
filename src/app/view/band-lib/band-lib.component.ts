@@ -275,7 +275,7 @@ constructor()
     let windWidth = window.innerWidth;
     console.log(windWidth);
     
-    if(windWidth <= 900){
+    if(windWidth <= 1190){
       this.currentTrackID = TrackID ;
       this.OPenImgTrack();
     }else{
@@ -309,7 +309,7 @@ constructor()
     let windWidth = window.innerWidth;
     console.log(windWidth);
     
-    if(windWidth <= 900){
+    if(windWidth <= 1190){
       document.getElementById("PlayedImg").style.setProperty("opacity","1","important");
       document.getElementById("PlayedImg").style.setProperty("width","100%","important");
       document.getElementById("PlayedImg").style.setProperty("height","41%","important");
@@ -325,7 +325,7 @@ constructor()
   
     setTimeout(() => {
        $('.CurrentTrack').css('opacity','1');
-    }, 1100); 
+    }, 1190); 
      
   }
 
@@ -336,7 +336,7 @@ constructor()
       let windWidth = window.innerWidth;
     console.log(windWidth);
     
-    if(windWidth <= 900){
+    if(windWidth <= 1190){
       document.getElementById("PlayedImg").style.setProperty("opacity","0","important");
     }
     

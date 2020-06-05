@@ -3,9 +3,9 @@
         <img src="assets/Group 4.png" class="imgLogo">
     </div>
 
-    <div class="SlideMenu" >
-         <img src="assets/Group 7.png" class="imgMenu" (click)="ControlSlide()">
-        
+    <div class="SlideMenu slideweb" >
+  
+         <img src="assets/Group 7.png"   class="imgMenu">
          <ul class="menuList">
             <li> 
                 <hr class="horLine"> 
@@ -35,5 +35,39 @@
           </ul>
         
     </div>
+
+    <div class="SlideMenu slideRes" >
+  
+        <img src="assets/Group 7.png"   class="imgMenu" (click)="ControlSlide()">
+        <ul class="menuList">
+           <li> 
+               <hr class="horLine"> 
+               <a [routerLink]="['']"
+               (click)="closeMenu()"
+               > 
+                    Home</a></li>
+           <li> 
+              
+               <hr class=" horLine horLineI">
+                 <a 
+                 href='/Band/3'
+                 (click)="closeMenu()"
+                 > Top Tracks</a></li>
+           <li> <hr class="horLine horLineII">
+                <a 
+                href=""
+                 [routerLink]="['/Contact']"
+                 (click)="closeMenu()"
+                >Contact</a></li>
+           <li> <hr class=" horLine horLineIII">
+                <a 
+                href=""
+                [routerLink]="['/About']"
+                (click)="closeMenu()"
+                >About</a></li>
+         </ul>
+       
+   </div>
+
 </header>
 

@@ -783,7 +783,90 @@ input[type="range"]{
   }
   }
 
-  @media only screen and (max-width: 900px){
+  @media only screen and (max-width: 1100px) and (min-width: 401px){
+    .BigStaticCircle{
+      display: none;
+    }
+    .smallCircleCont {
+      right: -34%;
+      top: -22%;
+    }
+    .AlbumCicle {
+      top: 6%;
+      right: -22%;
+    }
+    .AlbumTxt {
+      position: absolute;
+      margin-left: 17%;
+      margin-top: 21%;
+  }
+  .BandName {
+    font-family: 'Audiowide', cursive;
+    font-size: 47px;
+    margin-top: 10%;
+    margin-left: -32%;
+    color: white;
+}
+.BandTracks {
+  position: absolute;
+  margin-top: 42%;
+  line-height: 4;
+  margin-left: 3%;
+  height: 30%;
+  overflow-y: scroll;
+  width: 36%;
+  z-index: 8;
+}
+.trackContainer {
+  border-radius: 50%;
+  position: fixed;
+  top: 69%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+.trackContainer .block-container .block {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.TrackBand {
+  text-align: center;
+  font-size: 26px;
+}
+.TrackName {
+  font-size: 21px;
+}
+.trackDes {
+  font-size: 19px;
+}
+.ContPlay {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 63%;
+  left: 39%;
+}
+
+.ContPlay i {
+    font-size: 30px;
+    margin-left: 12%;
+    margin-top: 4%;
+    color: #262626;
+}
+.volMin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 28px;
+  position: fixed;
+  top: 71%;
+  right: 66%;
+}
+
+  }
+
+  @media only screen and (max-width: 400px){
     .BigStaticCircle{
       display: none;
     }

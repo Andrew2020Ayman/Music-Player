@@ -44,8 +44,8 @@
     transform: skew(19deg, 0deg) translateX(-99%);
     position: fixed;
     height: 100%;
-    width: 59%;
-    left: -9%;
+    width: 63%;
+    left: -13%;
     opacity: 0;
     transition: 0.9s;
 }
@@ -84,7 +84,46 @@
 
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 800px) and (min-width: 401px){
+
+    .BackCont {
+        background-size: contain;
+        background-size: 67%;
+    }
+    .ContactForm {
+        height: 100%;
+        background: transparent;
+        opacity: 0;
+        transition: 0.9s;
+        bottom: -33%;
+        position: fixed;
+    }
+    .AboutSek {
+        background-color: white;
+        transform: skew(0deg, 0deg) translateX(0%) !important;
+        position: fixed;
+        height: 67%;
+
+        width: 100%;
+        left: 0px;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.9s;
+    }
+    .FormCont{
+        top: 1%;
+       position: absolute;
+    }
+
+    .ContactHead {
+        font-size: 33px;
+        top: -16%;
+        left: -5%;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 400px){
 
     .BackCont {
         background-size: contain;
@@ -99,7 +138,7 @@
     }
     .AboutSek {
         background-color: white;
-        transform: skew(0deg, 0deg) translateX(0%);
+        transform: skew(0deg, 0deg) translateX(0%) !important;
         position: fixed;
         height: 70%;
         width: 100%;

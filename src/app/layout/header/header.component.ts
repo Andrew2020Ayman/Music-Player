@@ -13,15 +13,21 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event) {
   this.windWidth = window.innerWidth;
-  if(this.windWidth >= 1600){
-    $('.SlideMenu').css("width","15%");
-    $('.SlideMenu').css("height","28%");
-  }
-  else if(this.windWidth< 1600){
-    $('.SlideMenu').css("width","17%");
-    $('.SlideMenu').css("height","31%");
+  
 
-  }
+   /* if(this.windWidth > 1000){
+    $('.slideRes').css("width","200px");
+    $('.slideRes').css("height","200px");
+    $('.slideRes').css("top","-14%");
+    $('.slideRes').css("right","-7%");
+
+  } */
+  /*
+  else if(this.windWidth< 1600){
+    $('.slideRes').css("width","17%");
+    $('.slideRes').css("height","31%");
+
+  } */
 
 }
   slideBool = true;
@@ -31,35 +37,39 @@ export class HeaderComponent implements OnInit {
   
   }
 
+
   ControlSlide(){
     let windWidth = window.innerWidth;
     console.log(windWidth);
     if(this.slideBool){
-      console.log("Normal");
+      
+      
         if(windWidth <= 900){
-        $('.SlideMenu').css("width","109%");
-        $('.SlideMenu').css("height","73%");
-        $('.SlideMenu').css("top","-165px");
-  
+        $('.slideRes').css("width","400px");
+        $('.slideRes').css("height","400px");
+        $('.slideRes').css("top","-16%");
+        $('.slideRes').css("right","-12%");
+
         $('.menuList').css("opacity","1");
         $('.menuList').css("transform","translateX(10%)");
       }
-     else if(windWidth < 1600){
-        $('.SlideMenu').css("width","41%");
-        $('.SlideMenu').css("height","88%");
-        $('.SlideMenu').css("top","-165px");
+
+     /* else if(windWidth < 1600){
+        $('.slideRes').css("width","41%");
+        $('.slideRes').css("height","88%");
+        $('.slideRes').css("top","-165px");
   
         $('.menuList').css("opacity","1");
         $('.menuList').css("transform","translateX(10%)");
       }
       else  if(windWidth >= 1600){
-        $('.SlideMenu').css("width","37%");
-        $('.SlideMenu').css("height","77%");
-        $('.SlideMenu').css("top","-165px");
+        $('.slideRes').css("width","37%");
+        $('.slideRes').css("height","77%");
+        $('.slideRes').css("top","-165px");
   
         $('.menuList').css("opacity","1");
         $('.menuList').css("transform","translateX(10%)");
-      }
+      } */
       this.slideBool = false;
     }
    
@@ -75,33 +85,35 @@ export class HeaderComponent implements OnInit {
     
     if( !this.slideBool && windWidth <= 900){
      
-      $('.SlideMenu').css("width","32%");
-      $('.SlideMenu').css("height","19%");
-      $('.SlideMenu').css("top","-49px");
-      $('.SlideMenu').css("right","-51px");
+      $('.slideRes').css("width","120px");
+      $('.slideRes').css("height","120px");
+      $('.slideRes').css("top","-49px");
+      $('.slideRes').css("right","-51px");
 
       $('.menuList').css("opacity","0");
       $('.menuList').css("transform","translateX(220%)");
     }
+    
+   /*
    else if( !this.slideBool && windWidth < 1600){
-      $('.SlideMenu').css("width","17%");
-    $('.SlideMenu').css("height","31%");
-    $('.SlideMenu').css("top","-101px");
+      $('.slideRes').css("width","17%");
+    $('.slideRes').css("height","31%");
+    $('.slideRes').css("top","-101px");
 
     $('.menuList').css("opacity","0");
     $('.menuList').css("transform","translateX(220%)");
 
     }
     else if(!this.slideBool && windWidth >= 1600){
-      $('.SlideMenu').css("width","15%");
-    $('.SlideMenu').css("height","28%");
-    $('.SlideMenu').css("top","-101px");
+      $('.slideRes').css("width","15%");
+    $('.slideRes').css("height","28%");
+    $('.slideRes').css("top","-101px");
 
     $('.menuList').css("opacity","0");
     $('.menuList').css("transform","translateX(220%)");
 
     }
-    
+    */
     this.slideBool = true;
   }
 }

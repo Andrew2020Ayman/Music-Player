@@ -14,7 +14,7 @@
 .imgLogo:hover{
     width: 95%;
 }
-.SlideMenu{
+/* .SlideMenu{
     position: fixed;
     border-radius: 50%;
     z-index: 4;
@@ -26,14 +26,30 @@
     top: -101px;
     cursor: pointer;
     transition: 0.4s ease-out;
-}
-
-/* .SlideMenu:hover{
-    width: 41%;
-    height: 88%;
-    top: -165px;
 } */
+.SlideMenu{
+    position: fixed;
+    border-radius: 50%;
+    z-index: 4;
+     border: 0;
+    background-color: white;
+    right: -7%;
+    width: 200px;
+    height: 200px;
+    top: -14%;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+ .slideweb:hover {
+    right: -5%;
+    width: 550px;
+    height: 550px;
+    top: -15%;
+} 
 
+.ImgRes{
+    display: none;
+}
 .imgMenu{
    position: fixed;
     top: 5%;
@@ -52,10 +68,10 @@
     transform: translateX(220%);
 }
 
-/* .SlideMenu:hover .menuList{
-    opacity: 1;
-    transform: translateX(10%);
-} */
+.slideweb:hover .menuList {
+    opacity: 1 !important;
+    transform: translateX(10%) !important;
+} 
 
 .menuList li a{
     font-family: 'Audiowide', cursive;
@@ -95,6 +111,10 @@
 .horLineIII{
     top: 81%;
 }
+.slideRes{
+    display: none;
+}
+
 /*  */
 @media only screen and (min-width: 1600px) and (max-width: 1800px) {
    
@@ -156,6 +176,12 @@
 }
 
 @media only screen and (max-width: 900px){
+    .slideweb{
+        display: none;
+    }
+    .slideRes{
+        display: block;
+    }
     .imgLogo{
         display: none;
     }
@@ -163,14 +189,15 @@
         position: fixed;
         top: 4%;
         right: 3%;
-        width: 8%;
+        width: 31px;
     }
     .SlideMenu {
         right: -51px;
-        width: 32%;
-        height: 19%;
+        width: 120px;
+       height: 120px;
         top: -49px;
     }
+    
     .menuList{
         position: fixed;
         top: 4%;

@@ -17,7 +17,7 @@
       background-color: rgba(24, 38, 78, 0.2);
      background-image: url("../../../assets/green-dust-and-scratches.png");
     position: fixed;
-    
+  
     top: 0;
 
   }
@@ -30,7 +30,7 @@
   }
   .BandName{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 68px;
+    font-size: 51px;
     margin-left: 10%;
     top: -73%;
     position: relative;
@@ -40,7 +40,7 @@
     font-family: 'Audiowide', cursive;
     font-size: 62px;
     position: absolute;
-    top: -145%;
+    top: -163%;
     left: 20%;
   }
   .top{
@@ -312,41 +312,66 @@
     }
 
     }
-   /*  @media only screen and (max-width: 900px){
-
-      .listenBtn {
-        margin-top: 59%;
-        left: 26%;
+  
+    @media only screen and (max-width: 980px) and (min-width: 401px){
+      ::ng-deep .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      .playlist , .top{
+        display: none;
+      }
+      .txtCont{
+        top: 136%;
+      }
+      .BandName{
+        font-size: 41px;
+        width: 100%;
+        margin-left: 6%;
       }
       .numbersCont {
         width: 100%;
-        margin-top: 84%;
+        margin-top: 13%;
+        left: -76%;
       }
-
+      .listenBtn{
+        top: 152%;
+        left: -58%;
+        font-size: 15px;
+      }
+      ::ng-deep .owl-theme .owl-nav {
+        display: none !important;
+      }
+      .TitleDes{
+        width: 92%;
+        left: 9%;
+        top: 2%;
+      }
       .SocialLinks {
         position: absolute;
-        bottom: -169%;
-        left: 15%;
+        bottom: -119%;
+        padding-bottom: 5%;
+        left: 31%;
+    }
+    .numbersCont p {
+      margin-left: 1%;
+      font-size: 34px;
+    }
+    .active {
+      color: white !important;
+      font-size: 60px !important;
+      margin-top: -8%;
+  }
+
     }
 
-    .BandName {
-      font-size: 29px;
-      top: 240%;
-    }
-    .TitleDes{
-      font-size: 16px;
-      width: 70%;
-      left: 12%;
-      top: 317%;
-    }
-
-    ::ng-deep .owl-theme .owl-nav {
-      display: none !important;
-    }
-    }  */
-
-
-    @media only screen and (max-width: 900px){
+    @media only screen and (max-width: 400px){
+      ::ng-deep .owl-carousel .owl-stage-outer {
+        position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
       .playlist , .top{
         display: none;
       }
@@ -381,3 +406,5 @@
         left: 12%;
     }
     }
+
+    
