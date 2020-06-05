@@ -201,7 +201,8 @@
     .menuList{
         position: fixed;
         top: 4%;
-        right: 9%;
+        right: 18%;
+
     }
     .menuList li a {
         font-size: 17px;
